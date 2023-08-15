@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table</title>
+</head>
+<body>
+    <h1>Dynamic Table</h1>
+    <form method="POST">
+        <input type="text" name="new_column" placeholder="New Column">
+        <button type="submit">Add Column</button>
+        <button name="add_row" value="1" type="submit">Add Row</button>
+    </form>
+    <table> <tr> 
+        {% for header in data %} <th>
+            {{ header }}</th> 
+        {% endfor %} </tr> 
+        {% import 'builtins' as builtins %}
+        {% for row in builtins.zip(*data.values()) %} <tr> 
+            {% for header, value in builtins.zip(data.keys(), row) %} <td> 
+                <input type=“text” name=“{{ header }}_{{ loop.parent.index }}” value=“{{ value }}”> </td> 
+            {% endfor %} </tr> 
+        {% endfor %} 
+    </table>
+
+</body>
+</html>

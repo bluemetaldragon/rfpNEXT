@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    {% include 'bootstrap.html' %}
+</head>
+
+<body>
+
+  <h1> Log In Process</h1><br>
+
+  <!-- login.html -->
+  <form method="POST">
+
+    <div class = 'mb-2'>
+      <label> Email Address </label><br>
+      <input type="email" name="email" placeholder="Email" required><br>
+    </div>
+
+    <div class = 'mb-2'>
+      <label> Password </label><br>
+      <input type="password" name="password" placeholder="Password" required><br>
+    </div>
+
+    <button type="submit">Log In</button>
+  </form>
+
+</body>
+
