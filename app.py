@@ -8,13 +8,7 @@ app = Flask(__name__, static_folder='static', static_url_path='/static')
 # Initialize Firebase with your configuration
 
 firebase_config = {
-  "apiKey": "AIzaSyDENYFgKOaNZZKZsfzegkAGsjooFbYLtZg",
-  "authDomain": "rfpdata2.firebaseapp.com",
-  "databaseURL": "https://rfpdata2-default-rtdb.firebaseio.com/",
-  "projectId": "rfpdata2",
-  "storageBucket": "rfpdata2.appspot.com",
-  "messagingSenderId": "448830409449",
-  "appId": "1:448830409449:web:3997fcb518213c562bfe78"
+"TBD"
 };
 
 
